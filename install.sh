@@ -44,8 +44,8 @@ GeoIPFile /opt/geoip
 GeoIPv6File /opt/geoip6
 GeoIPExcludeUnknown 1
 StrictNodes 1
-ExcludeNodes {cn},{hk},{mo},{sg},{th},{pk},{by},{ru},{ir},{vn},{ph},{my},{cu},{br},{kz},{kw},{lk},{ci},{tk},{tw},{sy},{mn},{fr},{de},{??}
-ExcludeExitNodes {cn},{hk},{mo},{sg},{th},{pk},{by},{ru},{ir},{vn},{ph},{my},{cu},{br},{kz},{kw},{lk},{ci},{tk},{tw},{sy},{mn},{fr},{de},{??}
+ExcludeNodes {cn},{hk},{mo},{sg},{th},{pk},{by},{ru},{ir},{vn},{ph},{my},{cu},{br},{kz},{kw},{lk},{ci},{tk},{tw},{sy},{mn},{fr},{de},{it},{??}
+ExcludeExitNodes {cn},{hk},{mo},{sg},{th},{pk},{by},{ru},{ir},{vn},{ph},{my},{cu},{br},{kz},{kw},{lk},{ci},{tk},{tw},{sy},{mn},{fr},{de},{it},{??}
 #https://en.wikipedia.org/wiki/ISO_3166-1
 #EntryNodes {us}
 #ExitNodes {us}
