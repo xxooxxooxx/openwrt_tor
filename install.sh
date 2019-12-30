@@ -10,8 +10,7 @@ uci commit
 echo "$TIMEZONE">/etc/TZ
 /etc/init.d/sysntpd restart
 opkg update
-LU=`opkg find libustream-openssl* | awk '{print $1}'`
-opkg install tor ca-bundle ca-certificates bash python kmod-tcp-bbr $LU
+opkg install tor ca-bundle ca-certificates bash python kmod-tcp-bbr libustream-openssl
 mkdir /opt>/dev/null 2>&1
 cd /opt
 wget https://raw.githubusercontent.com/torproject/tor/master/src/config/mmdb-convert.py
