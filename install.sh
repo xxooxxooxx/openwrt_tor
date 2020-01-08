@@ -49,5 +49,6 @@ ExcludeExitNodes {cn},{hk},{mo},{sg},{th},{pk},{by},{ru},{ir},{vn},{ph},{my},{cu
 #EntryNodes {us}
 #ExitNodes {us}
 EOF
+/etc/init.d/tor enable
 ./updateip.sh
 
