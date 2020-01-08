@@ -31,7 +31,7 @@ chmod +x updateip.sh
 
 crontab -l>cron
 cat<<EOF>>cron
-6 4 * * 6 /opt/run-if-today 4 && /opt/updateip.sh
+6 4 * * 3 /opt/run-if-today 3 && /opt/updateip.sh
 EOF
 cat cron |crontab -
 rm cron>/dev/null 2>&1
