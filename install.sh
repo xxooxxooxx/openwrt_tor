@@ -14,7 +14,7 @@ opkg install tor ca-bundle ca-certificates bash python kmod-tcp-bbr libustream-o
 mkdir /opt>/dev/null 2>&1
 cd /opt
 #wget https://raw.githubusercontent.com/torproject/tor/master/src/config/mmdb-convert.py
-wget https://raw.githubusercontent.com/xr09/cron-last-sunday/master/run-if-today
+wget https://raw.githubusercontent.com/xr09/cron-last-sunday/master/run-if-today -O run-if-today
 chmod +x run-if-today
 
 cat >updateip.sh<<EOF
