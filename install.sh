@@ -29,8 +29,8 @@ wget https://raw.githubusercontent.com/torproject/tor/master/src/config/geoip6
 EOF
 chmod +x updateip.sh
 
-cat /etc/crontabs/root>cron
-cat<<cron>>EOF
+crontab -l>cron
+cat<<EOF>>cron
 5 6 * * 4 /opt/run-if-today 3 && /opt/updateip.sh
 EOF
 cat cron |crontab -
