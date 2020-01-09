@@ -25,7 +25,7 @@ cd /opt
 rm -rf geoip*>/dev/null 2>&1
 wget https://raw.githubusercontent.com/torproject/tor/master/src/config/geoip
 wget https://raw.githubusercontent.com/torproject/tor/master/src/config/geoip6
-/etc/init.d/tor restart
+/etc/init.d/tor restart>/dev/null 2>&1
 EOF
 chmod +x updateip.sh
 
