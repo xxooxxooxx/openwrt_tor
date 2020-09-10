@@ -13,7 +13,7 @@ opkg update
 opkg install tor ca-bundle ca-certificates bash python kmod-tcp-bbr libustream-openssl
 mkdir /opt>/dev/null 2>&1
 cd /opt
-wget https://raw.githubusercontent.com/torproject/tor/master/src/config/mmdb-convert.py
+wget https://raw.githubusercontent.com/torproject/tor/master/src/config/mmdb-convert.py -O mmdb-convert.py
 wget https://raw.githubusercontent.com/xr09/cron-last-sunday/master/run-if-today -O run-if-today
 chmod +x run-if-today
 
