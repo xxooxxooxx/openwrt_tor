@@ -13,7 +13,6 @@ opkg update
 opkg install tor ca-bundle ca-certificates bash python kmod-tcp-bbr libustream-openssl
 mkdir /opt>/dev/null 2>&1
 cd /opt
-wget https://raw.githubusercontent.com/torproject/tor/master/src/config/mmdb-convert.py -O mmdb-convert.py
 wget https://raw.githubusercontent.com/xr09/cron-last-sunday/master/run-if-today -O run-if-today
 chmod +x run-if-today
 
@@ -22,10 +21,9 @@ cat >updateip.sh<<EOF
 
 source /etc/profile
 cd /opt
-rm -rf geoip* *.mmdb>/dev/null 2>&1
-wget -O dbip-country-lite.mmdb.gz "https://download.db-ip.com/free/dbip-country-lite-$(date +'%Y-%m').mmdb.gz"
-gunzip dbip-country-lite.mmdb.gz
-python mmdb-convert.py dbip-country-lite.mmdb>/dev/null 2>&1
+rm -rf geoip* >/dev/null 2>&1
+wget https://raw.githubusercontent.com/xxooxxooxx/geoip_bot/master/geoip -O geoip
+wget https://raw.githubusercontent.com/xxooxxooxx/geoip_bot/master/geoip6 -O geoip6
 /etc/init.d/tor restart>/dev/null 2>&1
 EOF
 chmod +x updateip.sh
